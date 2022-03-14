@@ -5,7 +5,7 @@ using System.Reflection;
 var host = new HostBuilder()
                 .ConfigureAppConfiguration(builder =>
                 {
-                    builder.AddJsonFile("appsettings.json", true, true)
+                    builder.AddJsonFile("fakefile.json")
                         .AddUserSecrets(Assembly.GetExecutingAssembly());
                 })
                 .ConfigureFunctionsWorkerDefaults()
